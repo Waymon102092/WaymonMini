@@ -1,0 +1,56 @@
+.waymon_film_cell{
+  margin-top: 20rpx;
+  width: 96%;
+  margin-left: 2%;
+  height: 300rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  overflow: hidden;
+}
+
+.waymon_film_container{
+  padding: 20rpx;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  display: flex;
+}
+.waymon_film_left{
+  width: 30%;
+}
+.waymon_film_container image{
+  width: calc(100% - 20rpx);
+  height: 100%;
+  border-radius: 20rpx;
+}
+.waymon_film_center{
+  height: 100%;
+  width: 50%;
+}
+.waymon_film_right{
+  margin-top: 90rpx;
+  width: 20%;
+}
+.waymon_film_title{
+  font-size: 36rpx;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.waymon_film_detail{
+  font-size: 14px;
+  color: #999999;
+  line-height: 50rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.waymon_film_detail span{
+  color: red;
+}

@@ -1,0 +1,8 @@
+.waymon_check{
+  width: 10%;
+}
+.waymon_check image{
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 25rpx;
+}

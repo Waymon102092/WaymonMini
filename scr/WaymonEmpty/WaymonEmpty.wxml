@@ -1,0 +1,4 @@
+<view class="waymon_empty">
+   <image src="{{img}}" mode=""/>
+   <view>{{title}}</view>
+</view>

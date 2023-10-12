@@ -1,0 +1,3 @@
+<view class="waymon_content">
+  <text space="nbsp">{{content}}</text>
+</view>

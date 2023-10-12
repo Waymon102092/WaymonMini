@@ -1,0 +1,37 @@
+.waymon_btn_img_top{
+  font-size: 24rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  align-items: center;
+}
+.waymon_btn_img_left{
+  font-size: 24rpx;
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  align-items: center;
+}
+.waymon_btn_img_right{
+  font-size: 24rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.waymon_btn_img_bottom{
+  font-size: 24rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  align-items: center;
+}
+.waymon_btn_img_top image, .waymon_btn_img_left image, .waymon_btn_img_bottom image, .waymon_btn_img_right image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.waymon_btn_img_left image,  .waymon_btn_img_right image{
+  margin-left: 10rpx;
+  margin-right: 5rpx;
+}
+.waymon_btn_img_top view, .waymon_btn_img_left view, .waymon_btn_img_bottom view, .waymon_btn_img_right view{
+  line-height: 40rpx;
+}

@@ -1,0 +1,19 @@
+<view class="waymon_film_cell" bindtap="onDetail">
+   <view class="waymon_film_container">
+      <view class="waymon_film_left">
+        <image src="{{img}}" mode="aspectFill"/>
+      </view>
+      <view class="waymon_film_center">
+        <view class="waymon_film_title">{{title}}</view>
+        <view wx:if="{{tag == 0}}" class="waymon_film_detail">观众评分 <span>{{score}}</span></view>
+        <view wx:else class="waymon_film_detail">{{time}} 上映</view>
+        <view class="waymon_film_detail">导演 : {{dictor}}</view>
+        <view class="waymon_film_detail">类型 : {{type}}</view>
+        <view class="waymon_film_detail">主演 : {{active}}</view>
+      </view>
+      <view class="waymon_film_right">
+        <WaymonButton wx:if="{{state == 1}}" title="购票" status="1"></WaymonButton>
+        <WaymonButton wx:else title="预售" status="3"></WaymonButton>
+      </view>
+   </view>
+</view>

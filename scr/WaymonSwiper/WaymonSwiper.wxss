@@ -1,0 +1,18 @@
+.waymon_swiper{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 300rpx;
+  overflow: hidden; 
+  transform: translateY(0);
+}
+.waymon_swiper swiper-item{
+  width: 100%;
+  border-radius: 20rpx;
+}
+.waymon_swiper image{
+  width: 96%;
+  margin-left: 2%;
+  height: 100%;
+  margin-left: 2%;
+  border-radius: 20rpx;
+}

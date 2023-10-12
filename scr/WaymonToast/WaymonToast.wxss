@@ -1,0 +1,15 @@
+.waymon-toast{
+  position: fixed;
+  z-index: 99999;
+  bottom: 80px;
+  width: 76%;
+  left: 12%;
+  height: 55px;
+  line-height: 55px;
+  background: rgb(0, 0, 0,0.5);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+}

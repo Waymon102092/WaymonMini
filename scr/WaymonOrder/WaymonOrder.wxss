@@ -1,0 +1,114 @@
+.waymon_order{
+  width: calc(96%-20rpx);
+  margin-left: 2%;
+  height: auto;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  padding-bottom: 5px;
+}
+.waymon_order_top{
+  line-height: 80rpx;
+  display: flex;
+}
+.waymon_order_top view:first-child{
+  width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.waymon_order_top view:last-child{
+  width: 25%;
+  text-align: center;
+  color: red;
+}
+.waymon_order_center{
+  margin-top: 20rpx;
+  display: flex;
+}
+.waymon_order_center image{
+  width: 200rpx;
+  height: 280rpx;
+  border-radius: 10rpx;
+}
+.waymon_order_right{
+  width: 65%;
+  margin-left: 20rpx;
+}
+.waymon_order_title{
+  line-height: 45rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.waymon_order_detail{
+  font-size: 26rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.a{
+  color: #6B87F4;
+}
+.waymon_order_bottom{
+  display: flex;
+  height: 70rpx;
+  font-size: 24rpx;
+}
+.waymon_order_btn_title{
+  width: 46%;
+  font-weight: bold;
+  margin-top: 5rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.waymon_order_btn_detail{
+  width: 23%;
+  margin-top: 5rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: right;
+  font-size: 24rpx;
+  color: #999999;
+}
+.waymon_order_btn_title span{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+.waymon_order_btn{
+  margin-left: 1%;
+  width: 23%;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.waymon_order_btn1{
+  margin-top: 10rpx;
+  margin-left: 1%;
+  width: 23%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 35rpx;
+  border: 1px solid #eee;
+}
+.waymon_order_btn2{
+  margin-top: 10rpx;
+  margin-left: 1%;
+  width: 23%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 35rpx;
+  color: #fff;
+  background: linear-gradient(to right, #71E0E8, #6B87F4);
+}

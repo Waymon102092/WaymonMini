@@ -1,0 +1,31 @@
+.waymon_fans{
+  width: 94%;
+  margin-left: 3%;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+.waymon_fans image{
+  margin:20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+.waymon_fans_left{
+  margin-top: 20rpx;
+  width: 65%;
+}
+.waymon_fans_left view:first-child{
+  font-size: 30rpx;
+  font-weight: bold;
+  height: 50rpx;
+}
+.waymon_fans_left view:last-child{
+   color: #999999;
+   font-size: 26rpx;
+}
+.waymon_fans_right{
+  color: #999999;
+  font-size: 24rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}

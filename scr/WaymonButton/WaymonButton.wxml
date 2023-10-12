@@ -1,0 +1,5 @@
+<van-button wx:if="{{status == 1}}" color="linear-gradient(to right, #71E0E8, #6B87F4)" bind:click="onSubmit" round size="small">{{title}}</van-button>
+<van-button wx:if="{{status == 2}}" color="linear-gradient(to right, #b8f0f4, #cbd4fa)" bind:click="onSubmit" round size="small">{{title}}</van-button>
+<van-button wx:if="{{status == 3}}" color="#FFA500" bind:click="onSubmit" round size="small">{{title}}</van-button>
+<van-button wx:if="{{status == 0}}" color="#999999" bind:click="onCancel" round size="small">{{title}}</van-button>
+<van-button wx:if="{{status == -1}}" color="#eee" bind:click="onCancel" round size="small">{{title}}</van-button>

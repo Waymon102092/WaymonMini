@@ -1,0 +1,6 @@
+<view class="waymon_item" style="width: {{width}}px;" bindtap="onClick"> 
+   <image src="{{img}}" mode=""/>
+   <view>{{title}}</view>
+   <button wx:if="{{type == 'contact'}}" style="width: {{width}}px;" class="waymon_item_contact" open-type="contact"></button>
+   <div class="waymon_item_badge" wx:if="{{badge > 0}}"><text space="nbsp"> {{badge}} </text></div>
+</view>

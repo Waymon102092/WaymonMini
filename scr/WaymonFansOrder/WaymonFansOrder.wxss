@@ -1,0 +1,42 @@
+.waymon_fans_order{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.waymon_fans_order_top{
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+.waymon_fans_order_top image{
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+.waymon_fans_order_name{
+  width: 50%;
+  line-height: 50px;
+}
+.waymon_fans_order_income{
+  width: 35%;
+  line-height: 50px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+.waymon_fans_order_content{
+  width: calc(100% - 20px);
+  padding-left: 10px;
+  color: #999999;
+  font-size: 13px;
+  line-height: 50rpx;
+}
+.waymon_fans_order_title{
+  font-size: 13px;
+  font-weight: bold;
+}
+.waymon_fans_order_title span{
+  color: red;
+  margin-left: 10px;
+}

@@ -1,0 +1,23 @@
+<view class="waymon_plan">
+  <view class="waymon_plan_first">
+    <view>{{plan.start_time}}</view>
+    <view >{{plan.end_time}}散场</view>
+  </view>
+  <view class="waymon_plan_first a">
+    <view>{{plan.copy_type}}{{plan.copy_language}}</view>
+    <view >{{plan.hall_name}}</view>
+  </view>
+  <view class="waymon_plan_first b">
+    <view class="d"><span>￥</span>{{plan.price}}<span>起</span></view>
+    <view wx:if="{{plan.status == 1}}">市场价￥{{plan.market_price}}起</view>
+    <view wx:else >
+       提前1小时购票
+       <image bindtap="onToast" src="../../images/wen.png" mode=""/>
+    </view>
+  </view>
+  <view class="waymon_plan_btn">
+    <WaymonButton wx:if="{{plan.status == 1}}" title="购票" status="{{1}}" bindSubmit="onSubmit"></WaymonButton>
+    <WaymonButton wx:else title="暂停" status="{{ 0 }}" bindCancel="onCancel"></WaymonButton>
+  </view>
+</view>
+

@@ -1,0 +1,6 @@
+<WaymonBack></WaymonBack>
+<view class="waymon_author" style="height: {{height}}px;">
+   <image src="../../images/fail.png"></image>
+   <view class="waymon_author_tip">暂无权限</view>
+   <WaymonBtn status="1" title="返回" top="100" bindConfirm="onConfirm"></WaymonBtn>
+</view>

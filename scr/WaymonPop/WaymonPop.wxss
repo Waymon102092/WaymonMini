@@ -1,0 +1,13 @@
+.waymon_pop_title{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.waymon_pop_content{
+  width: 90%;
+  margin-left: 5%;
+  font-size: 24rpx;
+  line-height: 50rpx;
+}

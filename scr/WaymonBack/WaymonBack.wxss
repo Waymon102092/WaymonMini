@@ -1,0 +1,7 @@
+.waymon-back{
+  position: fixed;
+  left: 17px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}

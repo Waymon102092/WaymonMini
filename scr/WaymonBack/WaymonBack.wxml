@@ -1,0 +1,1 @@
+<image class="waymon-back" bindtap="onBack" style="top:{{top}}px;" src="../../images/left.png" mode=""/>

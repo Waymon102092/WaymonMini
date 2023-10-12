@@ -1,0 +1,14 @@
+<view class="waymon_withdraw">
+  <view class="waymon_withdraw_top">
+    <view class="waymon_withdraw_left">-{{withdraw.money/100}}</view>
+     <view class="waymon_withdraw_right">
+        <view wx:if="{{withdraw.status == 0 }}" class="a">提现中</view>
+        <view wx:elif="{{withdraw.status == 1 }}" class="b">提现成功</view>
+        <view wx:else class="c">提现失败</view>
+     </view>
+  </view>
+  <view class="waymon_withdraw_bottom">
+     <view>{{withdraw.time}}</view>
+     <view>余额 : {{withdraw.price/100}}</view>
+  </view>
+</view>

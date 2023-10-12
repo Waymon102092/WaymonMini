@@ -1,0 +1,11 @@
+<view class="waymon_step">
+   <view class="waymon_step_left">
+     <image src="../../images/select.png" mode=""/>
+     <view wx:if="{{isLine}}" class="waymon_step_line"></view>
+   </view>
+   <view class="waymon_step_right">
+     <view class="waymon_step_title">{{title}}</view>
+     <view class="waymon_step_detail">{{detail}}</view>
+     <view class="waymon_step_detail">{{time}}</view>
+   </view>
+</view>

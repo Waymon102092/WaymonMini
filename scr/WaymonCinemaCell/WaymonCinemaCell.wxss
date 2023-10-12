@@ -1,0 +1,40 @@
+.waymon_cinema_cell{
+  margin-top: 20rpx;
+  width: 96%;
+  margin-left: 2%;
+  height: auto;
+  border-radius: 20rpx;
+  background: #fff;
+  overflow: hidden;
+  padding-bottom: 20rpx;
+}
+
+.waymon_cinema_left{
+  padding: 20rpx;
+  width: 94%;
+  display: flex;
+}
+.waymon_cinema_left view:first-child{
+  width: 85%;
+  line-height: 50rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.waymon_cinema_left view:last-child{
+  font-size: 28rpx;
+  color: #999999;
+}
+.waymon_cinema_right{
+  padding-left: 20rpx;
+  width: 94%;
+  display: flex;
+  color: #999999;
+}
+.waymon_cinema_right view:first-child{
+  width: 80%;
+  line-height: 40rpx;
+}
+.waymon_cinema_right view:last-child{
+  width: 20%;
+  text-align: end;
+}

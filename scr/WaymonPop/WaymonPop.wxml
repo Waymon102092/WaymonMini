@@ -1,0 +1,12 @@
+<van-popup
+  round
+  show="{{ isPop }}"
+  position="bottom"
+  custom-style="height: 40%;"
+  bind:close="onClose"
+>
+  <view class="waymon_pop">
+    <view class="waymon_pop_title">{{title}}</view>
+    <view class="waymon_pop_content"><text space="ensp">{{content}}</text></view>
+  </view>
+</van-popup>

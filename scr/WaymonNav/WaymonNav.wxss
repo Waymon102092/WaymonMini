@@ -1,0 +1,55 @@
+.waymon_nav{
+  position: relative;
+  margin-top: 10rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx 0 30rpx;
+  font-size: 26rpx;
+}
+.waymon_nav_left{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.waymon_nav_left image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.waymon_nav_title{
+  margin-left: 5px;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.waymon_nav_right{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.waymon_nav_detail{
+  width: 75%;
+  text-align: right;
+  color: #999999;
+}
+.waymon_nav_avatar{
+  margin-left: 60%;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+}
+.waymon_nav_icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.waymon_nav_contact{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: red;
+  opacity: 0;
+}

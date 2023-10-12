@@ -1,0 +1,3 @@
+<view wx:if="{{status == 1}}" class="waymon_btn" style="margin-top: {{top}}px;">{{title}}</view>
+
+<view wx:else class="waymon_btn1" style="margin-top: {{top}}px;">{{title}}</view>

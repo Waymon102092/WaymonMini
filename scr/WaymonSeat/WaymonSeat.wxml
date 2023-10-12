@@ -1,0 +1,88 @@
+<wxs src="../../utils/waymon.wxs" module="tools" />
+
+<view class="waymon_seat_top">
+  <view class="waymon_seat_top_name">{{film_name}}</view>
+  <view class="waymon_seat_top_time">
+    <view>{{start_time}}</view>
+    <view>{{copy_type}}</view>
+    <view>{{copy_language}}</view>
+  </view>
+</view>
+
+<view class="waymon_seat" wx:if="{{seats.length > 0}}">
+  <view class="waymon_seating_screen">
+    <view class="waymon_screen"></view>
+  </view>
+  <view class="visual_title">{{hallName}}</view>
+  <view class="waymon_seatings_visual">
+    <movable-area>
+      <movable-view  direction="all" scale="{{true}}" scale-min="0.8" scale-max="2">
+        <view class="waymon_seat_number">
+          <block wx:for="{{ cols[cols.length - 1]}}" wx:key="*this">
+            <view wx:if="{{col > 1}}" class="waymon_seat_number_item" style="height: {{width}}px;line-height: {{width}}px;">{{item}}</view>
+            <view wx:else class="waymon_seat_number_item" style="height: {{width}}px;line-height: {{width}}px;">{{item+1}}</view>
+          </block>
+        </view>
+        <view class="waymon_seat_cell">
+          <view class="waymon_sear_content" style="width: {{width1}}px;margin-left: {{left}}px;">
+            <block wx:for="{{seats}}" wx:key="seats" wx:for-index="colIndex">
+              <block wx:for="{{item}}" wx:key="seat" wx:for-index="rowIndex">
+                <view class="waymon_seat_item" style="width: {{width}}px;height:{{width}}px;">
+                  <image style="width: {{width}}px;height:{{width}}px" wx:if="{{item.seatState == 0}}" src="../../images/normal.png" bindtap="onSelect" data-colindex="{{colIndex}}" data-rowindex="{{rowIndex}}" mode=""/>
+                  <image style="width: {{width}}px;height:{{width}}px" wx:if="{{item.seatState == 1}}" src="../../images/selected.png"  bindtap="onSelect" data-colindex="{{colIndex}}" data-rowindex="{{rowIndex}}" mode=""/>
+                  <image style="width: {{width}}px;height:{{width}}px" wx:if="{{item.seatState == -1}}" src="../../images/unselected.png" />
+                  <view style="width: {{width}}px;height:{{width}}px" wx:if="{{item.seatState == -2}}" src="../../images/normal.png"></view>
+                </view>
+              </block>
+            </block>
+          </view>
+          <view class="waymon_seat_line"></view>
+        </view>
+      </movable-view>
+    </movable-area>
+  </view>
+</view>
+
+<view class="waymon_seat_intro">
+    <view class="waymon_intro_item">
+      <image src="../../images/normal.png" mode=""/>
+      <view>可选</view>
+    </view>
+    <view class="waymon_intro_item">
+      <image src="../../images/unselected.png" mode=""/>
+      <view>已选</view>
+    </view>
+    <view class="waymon_intro_item">
+      <image src="../../images/selected.png" mode=""/>
+      <view>选中</view>
+    </view>
+  </view>
+
+<view class="waymon_seat_bottom">
+  <view class="waymon_seat_top">
+    <view class="waymon_seat_top_name">{{film_name}}</view>
+    <view class="waymon_seat_top_time">
+      <view>{{start_time}}</view>
+      <view>{{copy_type}}</view>
+      <view>{{copy_language}}</view>
+    </view>
+  </view>
+  <WaymonLine></WaymonLine>
+  <view class="waymon_seat_select" wx:if="{{arr.length > 0}}">
+    <block wx:for="{{arr}}" wx:key="seatArr">
+      <view class="waymon_seat_select_item" style="width: {{swidth}}px;">
+         <view class="waymon_seat_select_left">
+           <view>{{item.seatPieceName}}</view>
+           <view>￥{{item.money}}</view>
+         </view>
+         <view class="waymon_seat_select_right" bindtap="onRemove" data-index="{{index}}">x</view>
+      </view>
+    </block>
+  </view>
+  <WaymonBottom height="10"></WaymonBottom>
+  <button wx:if="{{member.tel == ''}}" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="waymon_seat_phone">确认选座</button>
+  <WaymonBtn wx:else status="{{ arr.length > 0 ? 1:0 }}" title="确认选座" bindtap="onConfirm"></WaymonBtn>
+  <WaymonBottom height="30"></WaymonBottom>
+</view>
+
+<WaymonToast id="WaymonToast"></WaymonToast>

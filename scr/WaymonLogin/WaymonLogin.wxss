@@ -1,0 +1,74 @@
+.waymon_login{
+  
+}
+.waymon_top{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(#71E0E8, #6B87F4);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-align: center;
+}
+.waymon_avatar{
+  margin-top: 100rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+}
+.waymon_cinema{
+  margin-left: -40rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.waymon_choose{
+  position: absolute;
+  top: 100rpx;
+  left: 40%;
+  background: red;
+  width: 120rpx;
+  height: 120rpx;
+  opacity: 0;
+}
+.waymon_nickname{
+  margin-top: 80rpx;
+  width: 80%;
+  margin-left: 10%;
+  background: #eeeeee;
+  height: 80rpx;
+  display: flex;
+  border-radius: 10rpx;
+}
+.waymon_nickname view{
+  line-height: 80rpx;
+  text-align: center;
+  width: 20%;
+  color: #999999;
+  font-weight: bold;
+}
+.waymon_nickname input{
+  height: 80rpx;
+  width: 70%;
+}
+.waymon_nickname image{
+  margin-top: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.waymon_tip{
+  margin-top: 40rpx;
+  width: 90%;
+  margin-left: 10%;
+  display: flex;
+}
+.waymon_tip image{
+  width: 38px;
+  height: 38px;
+}
+.waymon_tip_right{
+  width: 86%;
+  color: #999999;
+  margin-left: 10rpx;
+  font-size: 13px;
+}

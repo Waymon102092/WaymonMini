@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "WaymonToast":"/components/WaymonToast/WaymonToast",
+    "WaymonLoading":"/components/WaymonLoading/WaymonLoading"
+  }
+}

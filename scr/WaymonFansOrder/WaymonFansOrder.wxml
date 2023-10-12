@@ -1,0 +1,15 @@
+<view class="waymon_fans_order">
+   <view class="waymon_fans_order_top">
+     <image src="{{order.avatar_url}}"></image>
+     <view class="waymon_fans_order_name">{{order.nick_name}}</view>
+     <view class="waymon_fans_order_income">+￥{{order.income}}</view>
+   </view>
+   <WaymonLine></WaymonLine>
+   <view class="waymon_fans_order_content">
+    <view class="waymon_fans_order_title">{{order.film_name}} x{{order.num}} 张 <span>￥{{order.money/100}}</span></view>
+    <view style="display: flex; width: 100%;">
+      <view style="width: 80%;">{{order.trade_no}}</view>
+      <view bindtap="onCopy" style="width: 20%;text-align: right;">复制</view>
+    </view>
+   </view>
+</view>

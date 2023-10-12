@@ -1,0 +1,32 @@
+<view class="waymon_month">
+  <view class="waymon_month_top" bindtap="onMonth">
+    <view><span>{{month}}</span>月</view>
+    <image src="../../images/down.png" mode=""/>
+  </view>
+</view>
+
+
+<van-popup
+  show="{{ isPicker }}"
+  z-index="999"
+  round
+  position="bottom"
+  custom-style="height: 60%"
+  bind:close="onClose"
+>
+  <view class="waymon_month_title"> 选择月份 </view>
+  <view class="waymon_month_date">
+    <van-datetime-picker
+      type="year-month"
+      bind:input="onChange"
+      show-toolbar="{{ flase }}"
+      value="{{ currentDate }}"
+      min-date="{{ minDate }}"
+      max-date="{{ maxDate }}"
+    />
+  </view>
+  <view class="waymon_month_bottom">
+    <view class="waymon_month_confirm" bindtap="onConfirm">确定</view>
+  </view>
+  
+</van-popup>

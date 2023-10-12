@@ -1,0 +1,19 @@
+<view class="waymon_amount">
+  <view class="waymon_amount_top">
+    <view class="waymon_amount_left"><span>{{amount.type == 1 ? '+' : '-'}}</span>{{amount.money/100}}</view>
+    <view wx:if="{{amount.type == 1}}" class="waymon_amount_right">
+        <view wx:if="{{amount.status == 0 }}" class="a">待获得</view>
+        <view wx:elif="{{amount.status == 1 }}" class="b">已获得</view>
+        <view wx:else class="c">已失效</view>
+     </view>
+     <view wx:else class="waymon_amount_right">
+        <view wx:if="{{amount.status == 0 }}" class="a">支出中</view>
+        <view wx:elif="{{amount.status == 1 }}" class="b">已成功</view>
+        <view wx:else class="c">已失败</view>
+     </view>
+  </view>
+  <view class="waymon_amount_bottom">
+     <view>{{amount.time}}</view>
+     <view>余额 : {{amount.price/100}}</view>
+  </view>
+</view>

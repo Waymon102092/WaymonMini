@@ -1,0 +1,16 @@
+<van-popup
+  round
+  show="{{ isDialog }}"
+  position="center"
+  custom-style="width:80%;padding-bottom:20px"
+  bind:close="onClose"
+>
+  <view class="waymon_dialog">
+    <view class="waymon_dialog_title">{{title}}</view>
+    <view class="waymon_dialog_content"><text space="ensp">{{content}}</text></view>
+  </view>
+  <view class="waymon_dialog_bottom" wx:if="{{isConfirm}}">
+    <view bindtap="onCancel">{{cancel}}</view>
+    <view bindtap="onConfirm">{{confirm}}</view>
+  </view>
+</van-popup>

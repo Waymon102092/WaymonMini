@@ -1,0 +1,41 @@
+.waymon_member{
+  width: 100%;
+  height: 370rpx;
+  overflow: hidden;
+  background: linear-gradient(to right,#b8f0f4,#cbd4fa);
+}
+.waymon_member_info{
+  margin-top: 190rpx;
+  height: 130rpx;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+}
+.waymon_member_info image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+}
+.waymon_member_center{
+  margin-left: 20rpx;
+  width: 60%;
+}
+.waymon_member_center view:first-child{
+  font-size: 40rpx;
+  font-weight: bold;
+  height: 65rpx;
+}
+.waymon_member_center view:last-child{
+  font-size: 30rpx;
+}
+.waymon_member_right{
+  width: 15%;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  background: #6B87F4;
+  color: #fff;
+  border-top-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  font-size: 26rpx;
+}

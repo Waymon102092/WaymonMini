@@ -1,0 +1,42 @@
+Component({
+  properties: {
+    id:Number,
+    img:{
+      type:String,
+      value:"../../images/empty.png"
+    },
+    title:{
+      type:String,
+      value:""
+    },
+    tag:{
+       type:Number,
+       value:1 //1 上映 2 未上映
+    },
+    score:{
+      type:String,
+      value:""
+    },
+    dictor:{
+      type:String,
+      value:""
+    },
+    type:{
+      type:String,
+      value:""
+    },
+    active:{
+      type:String,
+      value:""
+    },
+    time:{
+      type:String
+    },
+    state:Number
+  },
+  methods: {
+    onDetail(){
+      this.triggerEvent('Detail')
+    }
+  }
+})

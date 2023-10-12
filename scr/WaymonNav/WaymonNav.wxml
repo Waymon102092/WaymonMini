@@ -1,0 +1,12 @@
+<view class="waymon_nav" bindtap="onRight">
+  <view class="waymon_nav_left">
+    <image wx:if="{{img}}" src="{{img}}" mode=""/>
+    <view class="waymon_nav_title">{{title}}</view>
+  </view>
+  <view class="waymon_nav_right">
+    <image class="waymon_nav_avatar" wx:if="{{ type == 'image'}}" src="{{detail}}" mode=""/>
+    <view wx:else class="waymon_nav_detail">{{detail}}</view>
+    <image class="waymon_nav_icon" wx:if="{{isRight}}" src="../../images/right.png" mode=""/>
+  </view> 
+  <button wx:if="{{type == 'contact'}}" style="width: {{width}}px;" class="waymon_nav_contact" open-type="contact"></button>
+</view>

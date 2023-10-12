@@ -1,0 +1,50 @@
+.waymon_withdraw{
+  width: 94%;
+  margin-left: 3%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.waymon_withdraw_top{
+  display: flex;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.waymon_withdraw_top span{
+  font-size: 26rpx;
+}
+.waymon_withdraw_left{
+  width: 50%;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+.waymon_withdraw_right{
+  width: 50%;
+  text-align: right;
+  font-size: 26rpx;
+}
+
+.waymon_withdraw_bottom{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.waymon_withdraw_bottom view:first-child{
+  width: 50%;
+  color: #999999;
+  font-size: 24rpx;
+}
+.waymon_withdraw_bottom view:last-child{
+  width: 50%;
+  text-align: right;
+  font-size: 26rpx;
+}
+.a {
+  color: red;
+}
+.b{
+  color: green;
+}
+.c{
+  color: gray;
+}

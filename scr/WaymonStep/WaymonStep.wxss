@@ -1,0 +1,34 @@
+.waymon_step{
+  width: 100%;
+  display: flex;
+  padding-bottom: 20rpx;
+}
+.waymon_step_left{
+  position: relative;
+  width: 10%;
+  text-align: center;
+}
+.waymon_step_left image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.waymon_step_line{
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  background: #cbd4fa;
+}
+.waymon_step_right{
+  width: 90%;
+}
+.waymon_step_title{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.waymon_step_detail{
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #999999;
+  line-height: 50rpx;
+}

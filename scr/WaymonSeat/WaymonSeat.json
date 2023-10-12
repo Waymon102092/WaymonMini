@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "WaymonToast":"/components/WaymonToast/WaymonToast",
+    "WaymonBtn":"/components/WaymonBtn/WaymonBtn",
+    "WaymonBottom":"/components/WaymonBottom/WaymonBottom",
+    "WaymonLine":"/components/WaymonLine/WaymonLine"
+  }
+}

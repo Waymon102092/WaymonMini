@@ -1,0 +1,4 @@
+<view class="{{border ? 'waymon_input_border' : 'waymon_input'}}">
+   <view class="waymon_input_title">{{title}}</view>
+   <input disabled="{{disabled}}" type="text" value="{{value}}" placeholder="{{placeholder}}" placeholder-style="font-size:26rpx" bindinput="onInput"/>
+</view>

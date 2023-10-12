@@ -1,0 +1,4 @@
+<view class="waymon_check" bindtap="onCheck">
+  <image wx:if="{{isCheck}}" src="../../images/select.png" mode=""/>
+  <image wx:else src="../../images/unselect.png" mode=""/>
+</view>

@@ -1,0 +1,23 @@
+{
+  "name": "waymon_mini",
+  "version": "0.0.1",
+  "description": "Waymon微信小程序自定义UI组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waymon102092/WaymonMini.git"
+  },
+  "keywords": [
+    "Waymon"
+  ],
+  "author": "Waymon丶魏",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Waymon102092/WaymonMini/issues"
+  },
+  "homepage": "https://github.com/Waymon102092/WaymonMini#readme",
+  "miniprogram": "src"
+}

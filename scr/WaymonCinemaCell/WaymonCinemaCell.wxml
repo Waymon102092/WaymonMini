@@ -1,0 +1,10 @@
+<view class="waymon_cinema_cell" bindtap="onClick">
+  <view class="waymon_cinema_left">
+    <view>{{title}}</view>
+    <view></view>
+  </view>
+  <view class="waymon_cinema_right">
+    <view>{{address}}</view>
+    <view>{{instance}}</view>
+  </view>
+</view>

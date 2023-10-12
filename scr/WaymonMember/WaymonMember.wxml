@@ -1,0 +1,13 @@
+<view class="waymon_member">
+   <view class="waymon_member_info" bindtap="onMember">
+     <image wx:if="{{member.avatar_url != ''}}" src="{{member.avatar_url}}" mode=""/>
+     <image wx:else src="../../images/avatar.png" mode=""/>
+     <view class="waymon_member_center">
+       <view>{{member.nick_name}}</view>
+       <view>ID {{member.id}}</view>
+     </view>
+     <!-- <view class="waymon_member_right" wx:if="{{member.status == 0}}">会员</view> -->
+     <view class="waymon_member_right" wx:if="{{member.status == 1}}">代理商</view>
+     <view class="waymon_member_right" wx:if="{{member.status == 3}}">员工</view>
+   </view>
+</view>

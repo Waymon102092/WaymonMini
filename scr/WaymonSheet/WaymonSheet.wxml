@@ -1,0 +1,8 @@
+<van-action-sheet
+  description = "{{title}}"
+  show="{{ isShow }}"
+  actions="{{ actions }}"
+  cancel-text="取消"
+  bind:close="onClose"
+  bind:select="onSelect"
+/>

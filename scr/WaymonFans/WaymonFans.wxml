@@ -1,0 +1,8 @@
+<view class="waymon_fans">
+   <image src="{{fans.avatar_url}}" mode=""/>
+   <view class="waymon_fans_left">
+     <view>{{fans.nick_name}}</view>
+     <view>{{fans.tel}}</view>
+   </view>
+   <view class="waymon_fans_right">{{fans.time}}</view>
+</view>

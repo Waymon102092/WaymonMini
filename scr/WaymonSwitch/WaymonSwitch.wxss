@@ -1,0 +1,22 @@
+.waymon_switch{
+  margin-top: 10rpx;
+  width: 100%;
+  display: flex;
+}
+.waymon_switch_item{
+  width: 15%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+.active {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.waymon_switch_line{
+  width: 60%;
+  margin-left: 20%;
+  height: 8rpx;
+  background-color: red;
+}

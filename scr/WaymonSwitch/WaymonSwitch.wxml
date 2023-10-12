@@ -1,0 +1,8 @@
+<view class="waymon_switch">
+  <block wx:for="{{switchs}}" wx:key="switch">
+    <view class="waymon_switch_item" bindtap="onSwitch" data-index="{{index}}">
+      <view class="{{ switchIndex == index ? 'waymon_switch_title active' : 'waymon_switch_title' }}">{{item}}</view>
+      <view class="waymon_switch_line" wx:if="{{switchIndex == index}}"></view>
+    </view>
+  </block>
+</view>

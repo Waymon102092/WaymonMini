@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "WaymonBack":"/components/WaymonBack/WaymonBack",
+    "WaymonBtn":"/components/WaymonBtn/WaymonBtn"
+  }
+}

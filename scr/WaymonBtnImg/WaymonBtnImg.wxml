@@ -1,0 +1,19 @@
+<view class="waymon_btn_img_top" wx:if="{{type == 'top'}}">
+   <image src="{{img}}" mode=""/>
+   <view>{{title}}</view>
+</view>
+
+<view class="waymon_btn_img_left" wx:if="{{type == 'left'}}">
+   <image src="{{img}}" mode=""/>
+   <view>{{title}}</view>
+</view>
+
+<view class="waymon_btn_img_bottom" wx:if="{{type == 'bottom'}}">
+  <view>{{title}}</view>
+  <image src="{{img}}" mode=""/>
+</view>
+
+<view class="waymon_btn_img_right" wx:if="{{type == 'right'}}">
+  <view>{{title}}</view>
+  <image src="{{img}}" mode=""/>
+</view>

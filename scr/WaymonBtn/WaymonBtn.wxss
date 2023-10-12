@@ -1,0 +1,23 @@
+.waymon_btn{
+  width: 90%;
+  margin-left: 5%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 45rpx;
+  color: #fff;
+  background: linear-gradient(to right, #71E0E8, #6B87F4);
+  font-size: 30rpx;
+}
+
+.waymon_btn1{
+  width: 90%;
+  margin-left: 5%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 45rpx;
+  color: #fff;
+  background: #b8f0f4;
+  font-size: 30rpx;
+}

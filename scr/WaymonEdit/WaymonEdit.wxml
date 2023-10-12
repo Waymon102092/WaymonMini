@@ -1,0 +1,30 @@
+<van-popup 
+show="{{ show }}" 
+closeable
+round
+custom-style="height: 50%; width:80%"
+bind:close="onClose">
+   <view class="waymon_login">
+   <view class="waymon_top">
+    <image wx:if="{{avatarUrl}}" class="waymon_avatar" src="{{avatarUrl}}" mode=""/>
+     <image wx:else class="waymon_avatar" src="../../images/avatar.png" mode=""/>
+     <image class="waymon_cinema" src="../../images/cinema.png" mode=""/>
+     <button class="waymon_choose" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar"></button>
+   </view>
+   <view class="waymon_nickname">
+      <view>昵称</view>
+      <input model:value="{{nickname}}" type="nickname" placeholder="请输入昵称"/>
+    </view>
+    <view class="waymon_tip">
+      <image src="../../images/wechat.png" mode=""/>
+      <view class="waymon_tip_right">
+        <view>点击头像 选择"用微信头像"</view>
+        <view>输入昵称 选择键盘上方"用微信昵称"</view>
+      </view>
+    </view>
+    <van-button bind:click="onSubmit" size="normal" round custom-style="position:absolute;margin-left:10%; width:80%;bottom:20px" color="linear-gradient(to right, #71E0E8, #6B87F4)">确认修改</van-button>
+   </view>
+</van-popup>
+
+<WaymonToast id="WaymonToast"></WaymonToast>
+<WaymonLoading id="WaymonLoading"></WaymonLoading>

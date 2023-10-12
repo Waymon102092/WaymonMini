@@ -1,0 +1,50 @@
+.waymon_amount{
+  width: 94%;
+  margin-left: 3%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.waymon_amount_top{
+  display: flex;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.waymon_amount_top span{
+  font-size: 26rpx;
+}
+.waymon_amount_left{
+  width: 50%;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+.waymon_amount_right{
+  width: 50%;
+  text-align: right;
+  font-size: 26rpx;
+}
+
+.waymon_amount_bottom{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.waymon_amount_bottom view:first-child{
+  width: 50%;
+  color: #999999;
+  font-size: 24rpx;
+}
+.waymon_amount_bottom view:last-child{
+  width: 50%;
+  text-align: right;
+  font-size: 26rpx;
+}
+.a {
+  color: red;
+}
+.b{
+  color: green;
+}
+.c{
+  color: gray;
+}

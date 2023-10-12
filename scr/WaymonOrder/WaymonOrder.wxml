@@ -1,0 +1,68 @@
+<view class="waymon_order" bindtap="onOrder">
+   <view class="waymon_order_top">
+     <view>{{order.cinema_name}}</view>
+     <view wx:if="{{order.status == 0}}">待支付</view>
+     <view wx:elif="{{order.status == 1}}">待出票</view>
+     <view wx:elif="{{order.status == 2}}">已出票</view>
+     <view wx:elif="{{order.status == 3}}">已完成</view>
+     <view wx:elif="{{order.status == 4 && order.state == 1}}">退款中</view>
+     <view wx:elif="{{order.status == 4 && order.state == 2}}">退款完成</view>
+     <view wx:elif="{{order.status == -2}}">出票失败</view>
+     <view wx:else>已取消</view>
+   </view>
+   <WaymonLine></WaymonLine>
+   <view class="waymon_order_center">
+      <image src="{{order.cover}}" mode=""/>
+      <view class="waymon_order_right">
+        <view class="waymon_order_title">{{order.film_name}}</view>
+        <view class="waymon_order_detail">{{order.hall_name}}</view>
+        <view class="waymon_order_detail a">开场时间：{{order.start_time}}</view>
+        <view class="waymon_order_detail">{{order.seats}}</view>
+        <view class="waymon_order_detail">已优惠：￥{{order.discount/100}}</view>
+        <view class="waymon_order_detail">下单时间：{{order.time}}</view>
+      </view>
+   </view>
+   <!-- 代付款 -->
+   <view class="waymon_order_bottom" wx:if="{{order.status == 0}}"> 
+      <view class="waymon_order_btn_title">订单金额:<span>￥{{order.money/100}}</span></view>
+      <view class="waymon_order_btn1" catchtap="onCancel">取消订单</view>
+      <view class="waymon_order_btn2" catchtap="onPay">立即支付</view>
+   </view>
+   <!-- 待出票 -->
+   <view class="waymon_order_bottom" wx:if="{{order.status == 1}}">
+      <view class="waymon_order_btn_title">订单金额:<span>￥{{order.money/100}}</span></view>
+      <view class="waymon_order_btn1" wx:if="{{order.on_status == 0}}" catchtap="onRefund">取消订单</view>
+      <view class="waymon_order_btn" wx:else></view>
+      <view class="waymon_order_btn2" catchtap="onNotice">催单提醒</view>
+   </view>
+   <!-- 已出票 -->
+   <view class="waymon_order_bottom" wx:if="{{order.status == 2}}">
+      <view class="waymon_order_btn_title">订单金额:<span>￥{{order.money/100}}</span></view>
+      <view class="waymon_order_btn"></view>
+      <view class="waymon_order_btn2" catchtap="onCode">查看取票码</view>
+   </view>
+   <!-- 已完成 -->
+   <view class="waymon_order_bottom" wx:if="{{order.status == 3}}">
+      <view class="waymon_order_btn_title">订单金额:<span>￥{{order.money/100}}</span></view>
+      <view class="waymon_order_btn"></view>
+      <view class="waymon_order_btn2" catchtap="onCode">查看取票码</view>
+   </view>
+   <!-- 售后 -->
+   <view class="waymon_order_bottom" wx:if="{{order.status == 4}}">
+      <view class="waymon_order_btn_title">订单金额:<span>￥{{order.money/100}}</span></view>
+      <view class="waymon_order_btn"></view>
+      <view class="waymon_order_btn"></view>
+   </view>
+   <!-- 已取消 -->
+   <view class="waymon_order_bottom" wx:if="{{order.status == -1}}">
+      <view class="waymon_order_btn_title">订单金额:<span>￥{{order.money/100}}</span></view>
+      <view class="waymon_order_btn"></view>
+      <view class="waymon_order_btn"></view>
+   </view>
+   <!-- 出票失败 -->
+   <view class="waymon_order_bottom" wx:if="{{order.status == -2}}">
+      <view class="waymon_order_btn_title">订单金额:<span>￥{{order.money/100}}</span></view>
+      <view class="waymon_order_btn"></view>
+      <view class="waymon_order_btn_detail"></view>
+   </view>
+</view>

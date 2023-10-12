@@ -1,0 +1,35 @@
+.waymon_item{
+  position: relative;
+  float: left;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.waymon_item image{
+  width: 75rpx;
+  height: 75rpx;
+}
+.waymon_item view{
+  line-height: 40rpx;
+  color: #999999;
+  font-size: 26rpx;
+}
+.waymon_item_contact{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: red;
+  opacity: 0;
+}
+.waymon_item_badge{
+  position: absolute;
+  top: -15rpx;
+  right: 20rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  background: red;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 15rpx;
+}

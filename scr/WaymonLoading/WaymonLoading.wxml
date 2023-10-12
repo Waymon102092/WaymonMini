@@ -1,0 +1,4 @@
+<view  class="waymon_loading" wx:if="{{show}}">
+  <image src="../../images/loading.gif" mode=""/>
+</view>
+  

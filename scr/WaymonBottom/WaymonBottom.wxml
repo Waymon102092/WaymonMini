@@ -1,0 +1,3 @@
+<view class="waymon_bottom" style="height:{{height}}px">
+  <view wx:if="{{isEnd}}" style="height:{{height}}px;line-height:{{height}}px">{{title}}</view>
+</view>

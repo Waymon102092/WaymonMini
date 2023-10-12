@@ -1,0 +1,16 @@
+<van-popup
+    show="{{ isCustom }}"
+    position="center"
+    round
+    custom-style="height: auto;width:70%"
+    bind:close="onClose"
+  >
+    <view class="waymon_custom">
+      <view class="waymon_custom_title">{{title}}</view>
+      <WaymonLine top="1"></WaymonLine>
+      <view class="waymon_custom_content">
+        <image src="{{img}}" show-menu-by-longpress="true" mode="widthFix"></image>
+      </view>
+      <view class="waymon_custom_detail">长按识别客服微信</view>
+    </view>
+</van-popup>

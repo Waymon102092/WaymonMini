@@ -1,0 +1,33 @@
+.waymon_custom{
+  width: 100%;
+  text-align: center;
+}
+.waymon_custom_title{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.waymon_custom_content{
+  margin-top: 10px;
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  font-size: 13px;
+  line-height: 25px;
+}
+.waymon_custom_content image{
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}
+.waymon_custom_detail{
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 13px;
+  color: #999999;
+}

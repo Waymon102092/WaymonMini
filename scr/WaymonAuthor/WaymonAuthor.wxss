@@ -1,0 +1,18 @@
+.waymon_author{
+  width: 100%;
+  text-align: center;
+  /* background: linear-gradient(to right,#b8f0f4,#cbd4fa); */
+}
+.waymon_author image{
+  margin-top: 200px;
+  width: 100px;
+  height: 100px;
+}
+.waymon_author_tip{
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #999999;
+  margin-top: 10px;
+}

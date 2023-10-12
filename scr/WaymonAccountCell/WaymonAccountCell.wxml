@@ -1,0 +1,4 @@
+<view class="waymon_account_cell">
+   <view>{{num}}</view>
+   <view>{{title}}</view>
+</view>

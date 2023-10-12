@@ -1,0 +1,7 @@
+<swiper class="waymon_swiper" autoplay indicator-dots indicator-active-color="#fff" wx:if="{{arr.length > 0}}">
+  <block wx:for="{{arr}}" wx:key="banner"> 
+    <swiper-item bindtap="onBanner" data-index="{{index}}">
+      <image src="{{item.img}}" mode=""></image>
+    </swiper-item>
+  </block> 
+</swiper>

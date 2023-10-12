@@ -1,0 +1,24 @@
+.waymon_input_border{
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  height: 100rpx;
+}
+.waymon_input{
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+}
+.waymon_input_title{
+  width: 25%;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.waymon_input input,.waymon_input_border input{
+  width: 70%;
+  height: 100rpx;
+  font-size: 26rpx;
+}

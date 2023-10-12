@@ -1,0 +1,7 @@
+.waymon_bottom{
+  width: 100%;
+}
+.waymon_bottom view{
+  text-align: center;
+  color: #999999;
+}

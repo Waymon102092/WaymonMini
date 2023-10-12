@@ -1,0 +1,47 @@
+.waymon_dialog{
+  width: 100%;
+}
+.waymon_dialog_title{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.waymon_dialog_content{
+  margin-top: 10rpx;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 26rpx;
+  line-height: 50rpx;
+}
+.waymon_dialog_content span{
+  color: red;
+}
+
+.waymon_dialog_bottom{
+  margin-top: 50rpx;
+  width: 100%;
+  display: flex;
+}
+.waymon_dialog_bottom view:first-child{
+  width: 40%;
+  margin-left: 5%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #eee;
+}
+.waymon_dialog_bottom view:last-child{
+  width: 40%;
+  margin-left: 5%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  background: linear-gradient(to right, #71E0E8, #6B87F4);
+  border: 1px solid #eee;
+  color: #fff;
+}
